@@ -1,6 +1,6 @@
     clear;
     str0='';
-    M = csv2cell('random_forest_update_7_04.csv'); 
+    M = csv2cell('TC_images_600.csv'); 
     L=length(M);
     itr=0; 
     for itr=1 : L
@@ -90,5 +90,5 @@
       inrow=inrow+1;  
     end    
     end
-      dlmwrite('CKLBP-NEW_27_09_V1.csv',PX,'delimiter',',','-append');                    
+      dlmwrite('MMLBP.csv',PX,'delimiter',',','-append');                    
   end
