@@ -1,6 +1,6 @@
     clear;
     str0='';
-    M = csv2cell('random_forest_update_7_04.csv'); 
+    M = csv2cell('TC_images_600.csv'); 
     L=length(M);
     itr=0; 
     for itr=1 : L
@@ -63,5 +63,5 @@
         end            
       end      
       localBinaryPatternImage1=uint8(localBinaryPatternImage);
-      dlmwrite('LLBP-NEW_27_09_others_new.csv',PX,'delimiter',',','-append');              
+      dlmwrite('MBLBP.csv',PX,'delimiter',',','-append');              
   end
